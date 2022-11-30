@@ -1,0 +1,10 @@
+#mengaktifkan rewrite
+RewriteEngine On
+#membuat aturan rewrite
+#NC not case sensitive
+#L last row
+RewriteRule ^show/([0-9a-zA-Z]+) index.php?page=show&id=$1 [NC,L]
+#redirect jika error
+ErrorDocument 404 /staditek/oop-database/404.html
+#redirect folder lama folder baru
+Redirect /staditek/oop-database/lama.php /staditek/oop-database/baru.php

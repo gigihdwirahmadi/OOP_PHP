@@ -1,0 +1,16 @@
+{
+    "name":"php2/oop",
+    "description": "PHP",
+    "type":"project",
+    "authors": [
+        {
+            "name":"Gigih",
+            "email":"gigih@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "OOP\\App\\":"App"
+        }
+    }
+}
